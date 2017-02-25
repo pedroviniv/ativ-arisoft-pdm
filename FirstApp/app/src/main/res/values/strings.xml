@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="btn_chat">Bate Papo</string>
+    <string name="btn_missions">Missões</string>
+    <string name="btn_new_mission">Nova Missão</string>
+    <string name="btn_old_missions">Missões Anteriores</string>
+    <string name="btn_settings">Configurações</string>
+    <string name="btn_gallery">Galeria de Fotos</string>
+
+    <string name="balloon_medium_text">A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial
+        das eventualidades agrega valor ao estabelecimento das direções preferenciais no sentido do progresso.</string>
+
+    <string name="balloon_large_text">A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial
+        das eventualidades agrega valor ao estabelecimento das direções preferenciais no sentido do progresso.
+        A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial das eventualidades agrega valor ao
+        estabelecimento das direções preferenciais no sentido do progresso.</string>
+
+    <string name="balloon_tiny_text">Hello World!</string>
+
+    <string name="my_name">Pedro Arthur</string>
+
+    <string name="host">192.168.43.152</string>
+</resources>

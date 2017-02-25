@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#55888888"
+            android:text="@string/btn_chat"
+            android:id="@+id/tab_chat"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="@string/btn_missions"
+            android:id="@+id/tab_missions"/>
+
+        <!-- <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#55888888"
+            android:text="Teste"
+            android:id="@+id/tab_teste"/> -->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55888888">
+
+        <!-- Tab: Bate-Papo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/frame_chat"
+            android:visibility="visible">
+
+            <!-- Conteúdo da aba Bate-Papo aqui -->
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:id="@+id/lv_chats">
+
+            </ListView>
+
+
+            <!-- <ScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:paddingBottom="10dp">
+
+                <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical">
+
+                     <include layout="@layout/box_listitem" />
+                     <include layout="@layout/box_listitem" />
+                     <include layout="@layout/box_listitem" />
+                     <include layout="@layout/box_listitem" />
+                     <include layout="@layout/box_listitem" />
+                     <include layout="@layout/box_listitem" />
+
+                 </LinearLayout>
+
+
+            </ScrollView> -->
+
+
+
+        </LinearLayout>
+
+        <!-- Tab: Missão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/frame_missions"
+            android:visibility="gone">
+
+            <!-- Conteúdo da aba Missão aqui -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/btn_new_mission"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:drawableTop="@mipmap/ic_work"
+                    android:id="@+id/bt_new_mission"
+                    android:lines="2" />
+
+                <Button
+                    android:text="@string/btn_old_missions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:drawableTop="@mipmap/ic_work_check"
+                    android:id="@+id/bt_old_mission"
+                    android:lines="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/btn_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:drawableTop="@mipmap/ic_settings"
+                    android:id="@+id/bt_config"
+                    android:lines="2" />
+
+                <Button
+                    android:text="@string/btn_gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:drawableTop="@mipmap/ic_view_quilt"
+                    android:id="@+id/bt_gallery"
+                    android:lines="2" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
